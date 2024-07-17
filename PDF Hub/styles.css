@@ -1,0 +1,527 @@
+/* styles.css */
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    
+}
+
+/* Header styles */
+header {
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f1f1;
+    z-index: 1000;
+   
+    
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #b465da
+    
+}
+
+nav {
+    flex: 1;
+    margin-left: 40px;
+}
+
+nav ul {
+    /* list-style: none; */
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+nav ul li {
+    /* display: inline-block;*/
+    
+    margin-right: 30px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #b465da
+}
+
+/* Buttons */
+.primary-button,
+.secondary-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+    /* margin-top: 20px; */
+}
+
+.primary-button {
+    
+    color: #fff;
+   
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+
+}
+
+.secondary-button {
+  
+    color: #fff;
+    
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+}
+
+/* Main section styles */
+#home {
+    padding: 100px;
+    text-align: center;
+    margin-top: 60xpx;
+    
+    
+}
+
+#home h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #009efd;
+}
+
+#home p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Feature section styles */
+.feature {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.feature img {
+    width: 500px;
+    height: 300px;
+}
+.tryIt-button{
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-top: 20px;
+    
+}
+.tryIt-button {
+  
+    color: #fff;
+    
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+}
+
+.feature h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+/* Example CSS
+color: rgb(63, 29, 164); */
+
+
+
+
+
+/* Testimonials section styles */
+.testimonials {
+    background-color: #f0f1f1;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #009efd;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.testimonial p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-info img {
+    width: 50px;
+    height: 50px;
+    
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info img:hover {
+    background-size: 120%; /* Zoom effect on hover */
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+.user-info p {
+    margin-top: 12px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+/* Pricing section styles */
+.pricing {
+    padding: 60px 0;
+    text-align: center;
+    
+}
+
+.pricing h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #009efd;
+}
+
+.pricing-plans {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    margin-left: 220px;
+    margin-right: 220px;
+    
+}
+
+.pricing-plan {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    
+}
+
+.pricing-plan h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    
+    
+}
+
+.pricing-plan p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    
+}
+
+.pricing-plan ul {
+    list-style: none;
+    
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pricing-plan ul li {
+    margin-bottom: 10px;
+    
+}
+
+.pricing-plan a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+.comparison-table {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.comparison-table h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #009efd;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+table td {
+    font-size: 16px;
+}
+
+table td:first-child {
+    text-align: left;
+}
+
+
+#about-us {
+    background-color: #f0f1f1;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#about-us .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#about-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #009efd;
+    /* color: rgb(63, 29, 164); Adjust color as per your design */
+}
+
+#about-us p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333; /* Adjust text color as per your design */
+}
+
+/* Footer styles */
+footer {
+    /* background-color: #f0f1f1; */
+    color: #000000;
+    padding: 60px;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.contact-info p {
+    margin-top: 10px;
+}
+
+
+@media (max-width: 1080px) {
+  /* Header styles */
+header {
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f1f1;
+    z-index: 1000;
+    
+    
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #b465da
+    
+}
+
+nav {
+    flex: 1;
+    margin-left: 40px;
+}
+
+nav ul {
+    /* list-style: none; */
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+nav ul li {
+    /* display: inline-block;*/
+    
+    margin-right: 30px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #b465da
+}
+
+/* Buttons */
+.primary-button,
+.secondary-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+    /* margin-top: 20px; */
+}
+/* .pricing {
+    padding: 60px 0;
+    text-align: center;
+    
+} */
+
+ 
+
+    .feature img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .pricing-plans {
+        flex-direction: column;
+        margin-left: 220px;
+        margin-right: 220px;
+        
+    }
+
+    .pricing-plan {
+        max-width: 100%;
+        margin-bottom: 20px; /* Space between pricing plans */
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 1000px;
+        
+    }
+    .comparison-table {
+        max-width: 90%;
+    }
+    #about-us .container {
+        max-width: auto;
+        margin: 0 auto;
+       
+    }
+}
+
+@media ((min-width: 360px) and (max-width: 780px)){
+    header {
+        flex-direction: column;
+    }
+
+nav ul {
+    /* list-style: none; */
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    
+    
+}
+    .cta-buttons {
+        margin-top: 5px;
+    }
+
+    #home {
+        padding: 50px 20px;
+        margin-top: 150px;
+    }
+     
+
+    #tools {
+        padding:
+         30px 20px;
+    }
+    .pricing {
+        
+        text-align: center;
+    }
+
+    .pricing-plans {
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+          margin-bottom: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .pricing h2{
+        padding-top: 30px;
+    }
+
+    .pricing-plan {
+        max-width: 90%; /* Increase the width to 90% for smaller screens */
+        margin-bottom: 20px; 
+        padding: 40px; /* Increase padding to make the box bigger */
+    }
+    .testimonials, #about-us {
+        padding: 30px 20px;
+    }
+}
+
